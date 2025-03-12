@@ -22,8 +22,8 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     """Load and preprocess all required data."""
-    domain_df = pd.read_csv(r"C:\Users\avvih\Documents\CSP\local_non\jpeg\analysis_results\all_analysis_data.csv")
-    posts_df = pd.read_csv(r"C:\Users\avvih\Documents\CSP\local_non\jpeg\analysis_results\scatter_analysis.csv")
+    domain_df = pd.read_csv(r"csv\all_analysis_data.csv")
+    posts_df = pd.read_csv(r"csv\scatter_analysis.csv")
     return domain_df, posts_df
 
 def filter_dataframe(df, filters):
